@@ -5,30 +5,37 @@ body {
 }
 
 .small-logo {
-    width: 50px; /* Adjusted size */
+    width: 50px; 
     height: auto;
     position: absolute;
     top: 50px; 
     left: 10px; 
 }
 
-/* Center items in navigation */
+.hobby-logo {
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    top: 50px; 
+    left: 10px; 
+}
+
+
 .nav-item {
     display: flex;
     align-items: center;
     justify-content: center; 
 }
 
-/* Navigation styling */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    align-items: center; /* Align items within the navigation */
+    align-items: center; 
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    margin-left: 50px; /* Space between logo and navigation items */
+    margin-left: 50px; 
 }
