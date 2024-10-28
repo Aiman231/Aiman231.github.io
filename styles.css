@@ -8,8 +8,8 @@ body {
     width: 50px; /* Adjusted size */
     height: auto;
     position: absolute;
-    top: 50px; /* Adjust this value to move the logo lower */
-    left: 10px; /* Positions it on the far left */
+    top: 50px; 
+    left: 10px; 
 }
 
 /* Center items in navigation */
