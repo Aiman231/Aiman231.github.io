@@ -5,7 +5,7 @@ body {
 }
 
 .small-logo {
-    width: px; /* Adjusted size */
+    width: 50px; /* Adjusted size */
     height: auto;
     position: absolute;
     top: 50px; /* Adjust this value to move the logo lower */
