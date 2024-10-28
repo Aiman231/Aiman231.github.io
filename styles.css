@@ -4,6 +4,13 @@ body {
     text-align: center;
 }
 
+.small-logo {
+    width: 20px; /* 1-2 cm */
+    height: auto;
+    position: absolute;
+    top: 10px; /* Adjusts vertical positioning */
+    left: 10px; /* Positions it on the far left */
+
 .nav-item {
     display: flex;
     align-items: center;
