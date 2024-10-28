@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    background: pink;
+    background: rgb(127, 217, 223);
     text-align: center;
 }
 
 .small-logo {
-    width: 50px; /* Adjusted size */
+    width: px; /* Adjusted size */
     height: auto;
     position: absolute;
     top: 50px; /* Adjust this value to move the logo lower */
