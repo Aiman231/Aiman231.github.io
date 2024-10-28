@@ -1,6 +1,27 @@
-body
-{
+body {
     margin: 0;
     background: pink;
     text-align: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo {
+    width: 20px; 
+    height: auto;
+    margin-right: 8px; /
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; 
 }
