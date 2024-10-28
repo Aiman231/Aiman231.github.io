@@ -5,11 +5,11 @@ body {
 }
 
 .small-logo {
-    width: 40px; /* Adjusted to a small size */
+    width: 40px; /* Adjusted to a larger size */
     height: auto;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 10px; /* Adjusts vertical positioning */
+    left: 10px; /* Positions it on the far left */
 }
 
 /* Center items in navigation */
@@ -17,13 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
-}
-
-/* Logo in navigation */
-.logo {
-    width: 10px;
-    height: auto;
-    margin-right: 8px;
 }
 
 /* Navigation styling */
@@ -37,4 +30,5 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
+    margin-left: 50px; /* Space between logo and navigation items */
 }
