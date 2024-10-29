@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .language-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .language {
+            display: none; /* Initially hide the languages */
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .question {
+            cursor: pointer;
+            font-size: 24px;
+            color: #00f; /* Change color to indicate clickable text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Languages I Speak</h1>
+        <p class="question" onclick="toggleLanguages()">How are you? I am fine.</p>
+    </header>
+
+    <div class="language-container">
+        <div class="language" id="languages">
+            <p>Here are the languages I can speak:</p>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Urdu</li>
+                <li>Arabic</li>
+                <li>German</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Back to <a href="https://aiman231.github.io/">Home</a></p>
+    </footer>
+
+    <script>
+        function toggleLanguages() {
+            const languages = document.getElementById("languages");
+            if (languages.style.display === "none" || languages.style.display === "") {
+                languages.style.display = "block"; // Show languages
+            } else {
+                languages.style.display = "none"; // Hide languages
+            }
+        }
+    </script>
+</body>
+</html>
