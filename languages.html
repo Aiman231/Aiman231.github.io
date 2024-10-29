@@ -10,34 +10,39 @@
             text-align: center;
             margin: 20px;
         }
-        .language {
-            display: none; /* Initially hide the languages */
-            margin-top: 10px;
-            font-size: 20px;
-        }
         .question {
             cursor: pointer;
             font-size: 24px;
             color: #00f; /* Change color to indicate clickable text */
+        }
+        .response {
+            display: none; /* Initially hide responses */
+            margin-top: 10px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Languages I Speak</h1>
-        <p class="question" onclick="toggleLanguages()">How are you? I am fine.</p>
+        <p class="question" onclick="toggleResponses()">How are you?</p>
     </header>
 
     <div class="language-container">
-        <div class="language" id="languages">
-            <p>Here are the languages I can speak:</p>
-            <ul>
-                <li>English</li>
-                <li>Hindi</li>
-                <li>Urdu</li>
-                <li>Arabic</li>
-                <li>German</li>
-            </ul>
+        <div class="response" id="english" onclick="playAudio('audio/english.mp3')">
+            <p>I'm fine (English)</p>
+        </div>
+        <div class="response" id="hindi" onclick="playAudio('audio/hindi.mp3')">
+            <p>मैं ठीक हूँ (Hindi)</p>
+        </div>
+        <div class="response" id="urdu" onclick="playAudio('audio/urdu.mp3')">
+            <p>میں ٹھیک ہوں (Urdu)</p>
+        </div>
+        <div class="response" id="arabic" onclick="playAudio('audio/arabic.mp3')">
+            <p>أنا بخير (Arabic)</p>
+        </div>
+        <div class="response" id="german" onclick="playAudio('audio/german.mp3')">
+            <p>Mir geht's gut (German)</p>
         </div>
     </div>
 
@@ -46,13 +51,16 @@
     </footer>
 
     <script>
-        function toggleLanguages() {
-            const languages = document.getElementById("languages");
-            if (languages.style.display === "none" || languages.style.display === "") {
-                languages.style.display = "block"; // Show languages
-            } else {
-                languages.style.display = "none"; // Hide languages
-            }
+        function toggleResponses() {
+            const responses = document.querySelectorAll('.response');
+            responses.forEach(response => {
+                response.style.display = response.style.display === "none" || response.style.display === "" ? "block" : "none"; // Toggle visibility
+            });
+        }
+
+        function playAudio(audioFile) {
+            const audio = new Audio(audioFile);
+            audio.play();
         }
     </script>
 </body>
