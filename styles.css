@@ -1,58 +1,29 @@
 body {
     margin: 0;
     background: black;
-    color: white; /* Sets text color to white */
+    color: white;
     text-align: center;
 }
 
-.small-logo {
-    width: 50px; 
+/* Navigation Logos */
+.small-logo, .hobby-logo, .email-logo, .linked-logo, .shop-logo, .language-logo {
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 50px; 
-    left: 10px; 
 }
 
-.hobby-logo {
-    width: 50px; 
-    height: auto;
-    position: absolute;
-    top: 110px; 
-    left: 10px; 
-}
+.small-logo { top: 50px; left: 10px; }
+.hobby-logo { top: 110px; left: 10px; }
+.email-logo { top: 180px; left: 10px; }
+.linked-logo { top: 240px; left: 10px; }
+.shop-logo { top: 300px; left: 10px; }
+.language-logo { top: 370px; left: 10px; }
 
-.email-logo {
-    width: 50px; 
-    height: auto;
-    position: absolute;
-    top: 180px; 
-    left: 10px; 
+/* Hobbies Gallery Container */
+.hobby-gallery-container {
+    background-color: black; /* Black background */
+    padding: 20px;
 }
-
-.linked-logo {
-    width: 50px; 
-    height: auto;
-    position: absolute;
-    top: 240px; 
-    left: 10px; 
-}
-
-.shop-logo {
-    width: 50px; 
-    height: auto;
-    position: absolute;
-    top: 300px; 
-    left: 10px; 
-}
-
-.language-logo {
-    width: 50px; 
-    height: auto;
-    position: absolute;
-    top: 370px; 
-    left: 10px; 
-}
-
 
 /* Hobbies Gallery */
 .hobby-gallery {
@@ -64,11 +35,12 @@ body {
 
 .hobby-item {
     position: relative;
-    width: 200px;
-    height: 150px;
+    width: 150px; /* Adjust width to control size */
+    height: 120px; /* Adjust height to control size */
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: black;
 }
 
 .hobby-image {
@@ -83,11 +55,12 @@ body {
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
+/* Hobby Overlay */
 .hobby-overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    color: white;
     width: 100%;
     text-align: center;
     padding: 5px;
@@ -101,7 +74,7 @@ body {
     opacity: 1; /* Overlay appears on hover */
 }
 
-
+/* Center items in navigation */
 .nav-item {
     display: flex;
     align-items: center;
@@ -112,12 +85,12 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #ffffff; /* White text for links */
+    color: #ffffff;
     margin-left: 50px;
 }
 
