@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background: rgb(127, 217, 223);
+    background: black;
+    color: white; /* Sets text color to white */
     text-align: center;
 }
 
@@ -52,6 +53,10 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
-    margin-left: 50px; 
+    color: #ffffff; /* White text for links */
+    margin-left: 50px;
+}
+
+footer {
+    color: white;
 }
