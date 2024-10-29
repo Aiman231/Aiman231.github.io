@@ -53,6 +53,55 @@ body {
     left: 10px; 
 }
 
+
+/* Hobbies Gallery */
+.hobby-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hobby-item {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hobby-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover .hobby-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.hobby-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.hobby-item:hover .hobby-overlay {
+    opacity: 1; /* Overlay appears on hover */
+}
+
+
 .nav-item {
     display: flex;
     align-items: center;
