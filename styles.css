@@ -37,6 +37,14 @@ body {
     left: 10px; 
 }
 
+.shop-logo {
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    top: 290px; 
+    left: 10px; 
+}
+
 
 .nav-item {
     display: flex;
