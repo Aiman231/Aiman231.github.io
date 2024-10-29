@@ -69,3 +69,30 @@ body {
 .hobby-item:hover .hobby-overlay {
     opacity: 1;
 }
+
+.email-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.email-item {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.email-item h3 {
+    margin: 0;
+    color: #00aced; /* Light blue for headers */
+}
+
+.email-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.email-item a:hover {
+    color: #00aced; /* Light blue on hover */
+    text-decoration: underline;
+}
