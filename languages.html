@@ -5,67 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Languages</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function playAudio(language) {
-            const audio = new Audio(language);
-            audio.play();
-        }
-    </script>
     <style>
+        .language-container {
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+
+        .language-item {
+            margin: 20px 0;
+        }
+
         .audio-icon {
             cursor: pointer;
             margin-left: 10px;
-            width: 20px; /* Adjust the size of the icon */
-            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Languages I Speak</h1>
-        <p>Click on the phrases to hear how to respond!</p>
+        <p>Click the question to hear the answer!</p>
     </header>
 
-    <section class="language-list">
+    <div class="language-container">
         <div class="language-item">
-            <h3>
-                How are you? (English)
-                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('english.mp3')">
-            </h3>
-            <p>I'm fine.</p>
+            <h3>English:</h3>
+            <p>
+                <span class="question">How are you?</span>
+                <span id="english-answer" style="display:none;">I am fine.</span>
+            </p>
         </div>
+
         <div class="language-item">
-            <h3>
-                आप कैसे हैं? (Hindi)
-                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('hindi.mp3')">
-            </h3>
-            <p>मैं ठीक हूँ। (Main theek hoon.)</p>
+            <h3>Hindi:</h3>
+            <p>
+                <span class="question" onclick="playAudio('Hindi_Q.mp3')">आप کیسے ہیں?</span>
+                <span class="audio-icon" onclick="playAudio('Hindi_A.mp3')">🔊</span>
+                <span id="hindi-answer" style="display:none;">मैं ठीक हूँ।</span>
+            </p>
         </div>
+
         <div class="language-item">
-            <h3>
-                آپ کیسے ہیں؟ (Urdu)
-                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('urdu.mp3')">
-            </h3>
-            <p>میں ٹھیک ہوں۔ (Main theek hoon.)</p>
+            <h3>Urdu:</h3>
+            <p>
+                <span class="question" onclick="playAudio('Urdu_Q.mp3')">آپ کیسے ہیں؟</span>
+                <span class="audio-icon" onclick="playAudio('Urdu_A.mp3')">🔊</span>
+                <span id="urdu-answer" style="display:none;">میں ٹھیک ہوں۔</span>
+            </p>
         </div>
+
         <div class="language-item">
-            <h3>
-                كيف حالك؟ (Arabic)
-                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('arabic.mp3')">
-            </h3>
-            <p>أنا بخير. (Ana bekhayr.)</p>
+            <h3>Arabic:</h3>
+            <p>
+                <span class="question" onclick="playAudio('Arabic_Q.mp3')">كيف حالك؟</span>
+                <span class="audio-icon" onclick="playAudio('Arabic_A.mp3')">🔊</span>
+                <span id="arabic-answer" style="display:none;">أنا بخير.</span>
+            </p>
         </div>
+
         <div class="language-item">
-            <h3>
-                Wie geht es dir? (German)
-                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('german.mp3')">
-            </h3>
-            <p>Mir geht's gut.</p>
+            <h3>German:</h3>
+            <p>
+                <span class="question" onclick="playAudio('German_Q.mp3')">Wie geht es Ihnen?</span>
+                <span class="audio-icon" onclick="playAudio('German_A.mp3')">🔊</span>
+                <span id="german-answer" style="display:none;">Mir geht es gut.</span>
+            </p>
         </div>
-    </section>
+    </div>
 
     <footer>
-        <p>Back to <a href="https://aiman231.github.io">Home</a></p>
+        <p>Back to <a href="index.html">Home</a></p>
     </footer>
+
+    <script>
+        function playAudio(file) {
+            const audio = new Audio(file);
+            audio.play();
+        }
+    </script>
 </body>
 </html>
