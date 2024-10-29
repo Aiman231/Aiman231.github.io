@@ -5,63 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Languages</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function playAudio(language) {
+            const audio = new Audio(language);
+            audio.play();
+        }
+    </script>
     <style>
-        .language-container {
-            text-align: center;
-            margin: 20px;
-        }
-        .question {
+        .audio-icon {
             cursor: pointer;
-            font-size: 24px;
-            color: #00f; /* Change color to indicate clickable text */
-        }
-        .response {
-            display: none; /* Initially hide responses */
-            margin-top: 10px;
-            font-size: 20px;
+            margin-left: 10px;
+            width: 20px; /* Adjust the size of the icon */
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Languages I Speak</h1>
-        <p class="question" onclick="toggleResponses()">How are you?</p>
+        <p>Click on the phrases to hear how to respond!</p>
     </header>
 
-    <div class="language-container">
-        <div class="response" id="english" onclick="playAudio('audio/english.mp3')">
-            <p>I'm fine (English)</p>
+    <section class="language-list">
+        <div class="language-item">
+            <h3>
+                How are you? (English)
+                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('english.mp3')">
+            </h3>
+            <p>I'm fine.</p>
         </div>
-        <div class="response" id="hindi" onclick="playAudio('audio/hindi.mp3')">
-            <p>मैं ठीक हूँ (Hindi)</p>
+        <div class="language-item">
+            <h3>
+                आप कैसे हैं? (Hindi)
+                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('hindi.mp3')">
+            </h3>
+            <p>मैं ठीक हूँ। (Main theek hoon.)</p>
         </div>
-        <div class="response" id="urdu" onclick="playAudio('audio/urdu.mp3')">
-            <p>میں ٹھیک ہوں (Urdu)</p>
+        <div class="language-item">
+            <h3>
+                آپ کیسے ہیں؟ (Urdu)
+                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('urdu.mp3')">
+            </h3>
+            <p>میں ٹھیک ہوں۔ (Main theek hoon.)</p>
         </div>
-        <div class="response" id="arabic" onclick="playAudio('audio/arabic.mp3')">
-            <p>أنا بخير (Arabic)</p>
+        <div class="language-item">
+            <h3>
+                كيف حالك؟ (Arabic)
+                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('arabic.mp3')">
+            </h3>
+            <p>أنا بخير. (Ana bekhayr.)</p>
         </div>
-        <div class="response" id="german" onclick="playAudio('german.mp3')">
-            <p>Mir geht's gut (German)</p>
+        <div class="language-item">
+            <h3>
+                Wie geht es dir? (German)
+                <img src="audio-icon.png" alt="Audio" class="audio-icon" onclick="playAudio('german.mp3')">
+            </h3>
+            <p>Mir geht's gut.</p>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <p>Back to <a href="https://aiman231.github.io/">Home</a></p>
+        <p>Back to <a href="https://aiman231.github.io">Home</a></p>
     </footer>
-
-    <script>
-        function toggleResponses() {
-            const responses = document.querySelectorAll('.response');
-            responses.forEach(response => {
-                response.style.display = response.style.display === "none" || response.style.display === "" ? "block" : "none"; // Toggle visibility
-            });
-        }
-
-        function playAudio(audioFile) {
-            const audio = new Audio(audioFile);
-            audio.play();
-        }
-    </script>
 </body>
 </html>
