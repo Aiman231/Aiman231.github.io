@@ -25,7 +25,7 @@
 <body>
     <header>
         <h1>Languages I Speak</h1>
-        <p>Click the question to hear the answer!</p>
+        <p>Click the question or answer to hear it!</p>
     </header>
 
     <div class="language-container">
@@ -33,43 +33,49 @@
             <h3>English:</h3>
             <p>
                 <span class="question">How are you?</span>
-                <span id="english-answer" style="display:none;">I am fine.</span>
+                <span class="audio-icon" onclick="playAudio('English_Q.mp3')">🔊</span>
+                <span class="answer">I am fine.</span>
+                <span class="audio-icon" onclick="playAudio('English_A.mp3')">🔊</span>
             </p>
         </div>
 
         <div class="language-item">
             <h3>Hindi:</h3>
             <p>
-                <span class="question" onclick="playAudio('Hindi_Q.mp3')">आप کیسے ہیں?</span>
+                <span class="question">आप कैसे हैं؟</span>
+                <span class="audio-icon" onclick="playAudio('Hindi_Q.mp3')">🔊</span>
+                <span class="answer">मैं ठीक हूँ।</span>
                 <span class="audio-icon" onclick="playAudio('Hindi_A.mp3')">🔊</span>
-                <span id="hindi-answer" style="display:none;">मैं ठीक हूँ।</span>
             </p>
         </div>
 
         <div class="language-item">
             <h3>Urdu:</h3>
             <p>
-                <span class="question" onclick="playAudio('Urdu_Q.mp3')">آپ کیسے ہیں؟</span>
+                <span class="question">آپ کیسے ہیں؟</span>
+                <span class="audio-icon" onclick="playAudio('Urdu_Q.mp3')">🔊</span>
+                <span class="answer">میں ٹھیک ہوں۔</span>
                 <span class="audio-icon" onclick="playAudio('Urdu_A.mp3')">🔊</span>
-                <span id="urdu-answer" style="display:none;">میں ٹھیک ہوں۔</span>
             </p>
         </div>
 
         <div class="language-item">
             <h3>Arabic:</h3>
             <p>
-                <span class="question" onclick="playAudio('Arabic_Q.mp3')">كيف حالك؟</span>
+                <span class="question">كيف حالك؟</span>
+                <span class="audio-icon" onclick="playAudio('Arabic_Q.mp3')">🔊</span>
+                <span class="answer">أنا بخير.</span>
                 <span class="audio-icon" onclick="playAudio('Arabic_A.mp3')">🔊</span>
-                <span id="arabic-answer" style="display:none;">أنا بخير.</span>
             </p>
         </div>
 
         <div class="language-item">
             <h3>German:</h3>
             <p>
-                <span class="question" onclick="playAudio('German_Q.mp3')">Wie geht es Ihnen?</span>
+                <span class="question">Wie geht es Ihnen?</span>
+                <span class="audio-icon" onclick="playAudio('German_Q.mp3')">🔊</span>
+                <span class="answer">Mir geht es gut.</span>
                 <span class="audio-icon" onclick="playAudio('German_A.mp3')">🔊</span>
-                <span id="german-answer" style="display:none;">Mir geht es gut.</span>
             </p>
         </div>
     </div>
