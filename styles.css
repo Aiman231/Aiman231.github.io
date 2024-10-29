@@ -4,24 +4,36 @@ body {
     background: #111; /* Darker shade for background */
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif; /* Added font for better readability */
 }
 
 /* Header Styles */
 header {
-    padding: 20px;
+    background-color: #222; /* Background color for the header */
+    padding: 20px; /* Padding around the header */
 }
 
-header h1 {
-    font-size: 2.5em; 
-    margin-bottom: 10px;
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Even space between left and right sections */
+    align-items: center; /* Center the items vertically */
 }
 
-header h2 {
-    font-size: 2em; 
-    margin-bottom: 15px;
+.header-left {
+    text-align: left; /* Align text to the left */
 }
 
+.header-right {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.icon-logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center; /* Center logos */
@@ -30,6 +42,9 @@ nav {
     position: relative; /* Allow for positioning of logos */
     padding: 20px 0; /* Padding around nav */
 }
+
+/* Other styles remain unchanged... */
+
 
 .small-logo, .hobby-logo, .email-logo, .linked-logo, .shop-logo, .language-logo {
     width: 50px;
