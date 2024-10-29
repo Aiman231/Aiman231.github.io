@@ -45,6 +45,13 @@ body {
     left: 10px; 
 }
 
+.language-logo {
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    top: 370px; 
+    left: 10px; 
+}
 
 .nav-item {
     display: flex;
